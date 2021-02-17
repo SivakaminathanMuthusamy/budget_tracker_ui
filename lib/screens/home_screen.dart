@@ -1,3 +1,4 @@
+import 'package:budget_tracker_app/pages/create_budget_page.dart';
 import 'package:budget_tracker_app/pages/daily_page.dart';
 import 'package:budget_tracker_app/pages/stats_page.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,14 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Color(0xFFFF3378),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => CreateBudgetPage(),
+            ),
+          );
+        },
         child: Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
