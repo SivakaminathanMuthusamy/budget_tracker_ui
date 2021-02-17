@@ -1,5 +1,7 @@
+import 'package:budget_tracker_app/pages/budget_page.dart';
 import 'package:budget_tracker_app/pages/create_budget_page.dart';
 import 'package:budget_tracker_app/pages/daily_page.dart';
+import 'package:budget_tracker_app/pages/profile_page.dart';
 import 'package:budget_tracker_app/pages/stats_page.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
@@ -19,12 +21,8 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           DailyPage(),
           StatsPage(),
-          Center(
-            child: Text('Page 3'),
-          ),
-          Center(
-            child: Text('Page 4'),
-          ),
+          BudgetPage(),
+          ProfilePage(),
         ],
       ),
       floatingActionButton: FloatingActionButton(
